@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title></title>
+		<link rel="stylesheet" href="static/css/amazeui.min.css"/>
+		<link rel="stylesheet" href="static/css/admin.css"/>
+		<link rel="stylesheet" href="static/css/paging.css"/>
+
+		<!--<link rel="stylesheet" href="static/css/app.css"/>-->
+	</head>
+	<body>
+		<div class="admin-content-body" >
+			<div class="am-cf am-padding am-padding-bottom-0" >
+				<div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">领域知识管理</strong><small></small></div>
+			</div>
+			<!--<hr>-->
+			<div class="am-g">
+				<div class="am-u-sm-12 am-u-md-6">
+					<div class="am-btn-toolbar">
+						<div class="am-btn-group am-btn-group-xs">
+							<button type="button" class="am-btn am-btn-default btnAdd">
+									<span class="am-icon-plus"></span> 新增
+									</button>
+						</div>
+					</div>
+				</div>
+				<div class="am-u-sm-12 am-u-md-3">
+					<div class="am-input-group am-input-group-sm">
+						<input id="roleName" class="am-form-field" placeholder="请输入规则名称" type="text"/>
+						<span class="am-input-group-btn">
+									<button class="am-btn am-btn-default" type="button" id="btnsearch">
+										搜索
+									</button> </span>
+					</div>
+				</div>
+			</div>
+			<div class="am-g" style="margin-top: 5px;">
+				<div class="am-u-sm-12">
+					<form class="am-form">
+						<table class="am-table am-table-striped am-table-hover table-main">
+							<thead>
+								<tr>
+									<!--<th class="table-id">-->
+										<!--<input id="chkAll" style="display:none">-->
+									<!--</th>-->
+									<th>
+										id
+									</th>
+									<th class="table-title">
+										名称
+									</th>
+									<th class="table-detail">
+										描述
+									</th>
+									<th class="table-conditional">
+										筛选字段
+									</th>
+									<th class="table-ppl">
+										筛选分词
+									</th>
+									<th class="table-department">
+										处理部门
+									</th>
+									<th class="table-operator">
+										操作人
+									</th>
+									<th class="table-operatime">
+										操作时间
+									</th>
+									<th class="table-set">
+										操作
+									</th>
+								</tr>
+							</thead>
+							<tbody id="tUser">
+							</tbody>
+						</table>
+
+					</form>
+				</div>
+			</div>
+			<div class='box' id='box'></div>
+		</div>
+
+
+		<!-- content end -->
+
+		<!--[if (gte IE 9)|!(IE)]><!-->
+		<script src="static/js/jquery-1.11.3.min.js"></script>
+		<script src="static/js/paging.js"></script>
+
+		<!--<![endif]-->
+		<script type="text/javascript" src="static/myplugs/js/plugs.js"></script>
+		<script type="text/javascript" src="static/js/role.js"></script>
+	</body>
+</html>
